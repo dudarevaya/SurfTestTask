@@ -1,0 +1,25 @@
+/* 
+  Localizable.strings
+  TestTask
+
+  Created by Yana Dudareva on 10.02.2023.
+  
+*/
+
+// Static strings
+
+"title" = "Стажировка в Surf";
+"descriptionCarusel" = "Работай над реальными задачами под руководством опытного наставника и получи возможность стать частью команды мечты.";
+"descriptionNextCarusel" = "Получай стипендию, выстраивай удобный график, работай на современном железе.";
+
+// Button titles
+
+"sendRequestButton" = "Отправить заявку";
+"wantToUsButton" = "Хочешь к нам?";
+
+// Jobs
+"ios" = "IOS";
+"android" = "Android";
+"design" = "Design";
+"flutter" = "Flutter";
+"qa" = "QA";
