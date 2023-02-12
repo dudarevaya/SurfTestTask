@@ -133,7 +133,6 @@ class JoinSurfView: UIView {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-
     
     // MARK: - Private Methods
 
@@ -183,15 +182,20 @@ class JoinSurfView: UIView {
         backgroundImage.topAnchor.constraint(equalTo: topAnchor).isActive = true
         
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
-        titleLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: Constants.offsetIndent).isActive = true
+        titleLabel.leadingAnchor.constraint(equalTo: leadingAnchor,
+                                            constant: Constants.offsetIndent).isActive = true
         
         descriptionCaruselLabel.translatesAutoresizingMaskIntoConstraints = false
-        descriptionCaruselLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: Constants.offsetIndent).isActive = true
-        descriptionCaruselLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: Constants.insetIndent).isActive = true
+        descriptionCaruselLabel.leadingAnchor.constraint(equalTo: leadingAnchor,
+                                                         constant: Constants.offsetIndent).isActive = true
+        descriptionCaruselLabel.trailingAnchor.constraint(equalTo: trailingAnchor,
+                                                          constant: Constants.insetIndent).isActive = true
         
         descriptionNextCaruselLabel.translatesAutoresizingMaskIntoConstraints = false
-        descriptionNextCaruselLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: Constants.offsetIndent).isActive = true
-        descriptionNextCaruselLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: Constants.insetIndent).isActive = true
+        descriptionNextCaruselLabel.leadingAnchor.constraint(equalTo: leadingAnchor,
+                                                             constant: Constants.offsetIndent).isActive = true
+        descriptionNextCaruselLabel.trailingAnchor.constraint(equalTo: trailingAnchor,
+                                                              constant: Constants.insetIndent).isActive = true
         
         drawerView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
@@ -208,14 +212,16 @@ class JoinSurfView: UIView {
         footerOfDrawerView.heightAnchor.constraint(equalToConstant: Constants.heightOfFooter).isActive = true
         
         NSLayoutConstraint.activate([
-            stackView.topAnchor.constraint(equalTo: drawerView.topAnchor, constant: Constants.StackView.topIndent),
+            stackView.topAnchor.constraint(equalTo: drawerView.topAnchor,
+                                           constant: Constants.StackView.topIndent),
             stackView.leadingAnchor.constraint(equalTo: leadingAnchor),
             stackView.trailingAnchor.constraint(equalTo: trailingAnchor),
             stackView.heightAnchor.constraint(equalToConstant: Constants.StackView.height)
         ])
         
         NSLayoutConstraint.activate([
-            stackViewNext.topAnchor.constraint(equalTo: stackView.bottomAnchor, constant: Constants.StackView.topIndent),
+            stackViewNext.topAnchor.constraint(equalTo: stackView.bottomAnchor,
+                                               constant: Constants.StackView.topIndent),
             stackViewNext.leadingAnchor.constraint(equalTo: leadingAnchor),
             stackViewNext.trailingAnchor.constraint(equalTo: trailingAnchor),
             stackViewNext.heightAnchor.constraint(equalToConstant: Constants.StackView.heightNext)

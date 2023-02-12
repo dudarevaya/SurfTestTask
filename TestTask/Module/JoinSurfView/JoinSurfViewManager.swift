@@ -27,11 +27,15 @@ final class JoinSurfViewManager: NSObject, JoinSurfViewManagerProtocol {
 
 extension JoinSurfViewManager: UICollectionViewDataSource {
 
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    func collectionView(_ collectionView: UICollectionView,
+                        numberOfItemsInSection section: Int
+    ) -> Int {
         return jobsArray.count
     }
 
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+    func collectionView(_ collectionView: UICollectionView,
+                        cellForItemAt indexPath: IndexPath
+    ) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(
             withReuseIdentifier: JoinSurfJobCell.identifier,
             for: indexPath
@@ -49,8 +53,9 @@ extension JoinSurfViewManager: UICollectionViewDataSource {
         return cell
     }
     
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
+    func collectionView(_ collectionView: UICollectionView,
+                        didSelectItemAt indexPath: IndexPath
+    ) {
         if tappedCells[indexPath.row] != nil {
             tappedCells.removeValue(forKey: indexPath.row)
         } else {

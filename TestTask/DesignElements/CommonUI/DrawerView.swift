@@ -26,7 +26,8 @@ class DrawerView: UIView {
     override func layoutSubviews() {
         super.layoutSubviews()
         let maskLayer = CAShapeLayer()
-        maskLayer.path = UIBezierPath(roundedRect: bounds, cornerRadius: cornerRadius ?? bounds.width * 0.2).cgPath
+        maskLayer.path = UIBezierPath(roundedRect: bounds,
+                                      cornerRadius: cornerRadius ?? bounds.width * 0.2).cgPath
         layer.mask = maskLayer
     }
 }

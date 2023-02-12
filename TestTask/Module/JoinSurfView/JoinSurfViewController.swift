@@ -48,7 +48,10 @@ final class JoinSurfViewController: UIViewController {
     // MARK: - Alert
     
     var alert: UIAlertController = {
-        let alert = UIAlertController(title: "Поздравляем!", message: "Ваша заявка успешно отправлена!", preferredStyle: .alert)
+        let alert = UIAlertController(title: "Поздравляем!",
+                                      message: "Ваша заявка успешно отправлена!",
+                                      preferredStyle: .alert
+        )
         let close = UIAlertAction(title: "Закрыть", style: .default)
         alert.addAction(close)
         return alert
@@ -86,14 +89,18 @@ final class JoinSurfViewController: UIViewController {
     
     private func makeConstraints() {
         wantToUsButton.translatesAutoresizingMaskIntoConstraints = false
-        wantToUsButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: Constants.wantToUsBottom).isActive = true
-        wantToUsButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: Constants.wantToUsLeading).isActive = true
+        wantToUsButton.bottomAnchor.constraint(equalTo: view.bottomAnchor,
+                                               constant: Constants.wantToUsBottom).isActive = true
+        wantToUsButton.leadingAnchor.constraint(equalTo: view.leadingAnchor,
+                                                constant: Constants.wantToUsLeading).isActive = true
         wantToUsButton.widthAnchor.constraint(equalToConstant: Constants.wantToUsWidth).isActive = true
         wantToUsButton.heightAnchor.constraint(equalToConstant: Constants.wantToUsHeight).isActive = true
 
         sendRequestButton.translatesAutoresizingMaskIntoConstraints = false
-        sendRequestButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: Constants.sendRequestBottom).isActive = true
-        sendRequestButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: Constants.sendRequestTrailing).isActive = true
+        sendRequestButton.bottomAnchor.constraint(equalTo: view.bottomAnchor,
+                                                  constant: Constants.sendRequestBottom).isActive = true
+        sendRequestButton.trailingAnchor.constraint(equalTo: view.trailingAnchor,
+                                                    constant: Constants.sendRequestTrailing).isActive = true
         sendRequestButton.widthAnchor.constraint(equalToConstant: Constants.sendRequestWidth).isActive = true
         sendRequestButton.heightAnchor.constraint(equalToConstant: Constants.sendRequestHeight).isActive = true
     }

@@ -63,7 +63,8 @@ final class JoinSurfPresenter {
                 jobsButton: TextViewModel(
                     text: $0,
                     textColor: UIColor(named: Constants.Colors.accentColor),
-                    font: UIFont(name: Constants.Fonts.sfProRegular, size: Constants.Fonts.defaultSize)
+                    font: UIFont(name: Constants.Fonts.sfProRegular,
+                                 size: Constants.Fonts.defaultSize)
                 )
             )
             )
